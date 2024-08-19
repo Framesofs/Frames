@@ -1,0 +1,423 @@
+<html>
+<title>
+Frames
+</title>
+<style>
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    right:12;
+    position: fixed;
+    min-width: 22%;
+    top:115px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+
+body{
+
+margin:0;
+font-family:urw gothic l;
+}
+.bg{width:100%; height:100%; position:absolute;}
+.bg img{width:100%; height:100%; position:absolute;-moz-animation:fade 8s ease infinite;}
+.bg img:nth-of-type(1){-moz-animation-delay:6s;}
+.bg img:nth-of-type(2){-moz-animation-delay:4s;}
+.bg img:nth-of-type(3){-moz-animation-delay:2s;}
+.bg img:nth-of-type(4){-moz-animation-delay:0s;}
+@-moz-keyframes fade{
+0%{opacity:1;}
+17%{opacity:1;}
+35%{opacity:0;}
+92%{opacity:0;}
+100%{opacity:1;}
+}
+.all{position:relative;}
+.margin{
+width:100%; top:0;
+}
+.wrap{
+width:100%; height:100%; padding:120 0;
+}
+nav{
+height:50;
+position:fixed;
+width:100%;
+top:80;
+
+background:green;
+}
+nava{
+height:80;
+position:fixed;
+width:100%;
+top:0;
+background:white;
+}
+
+.nl{
+color:white;
+float:left;
+padding:10 20;
+}
+.nl:hover{
+background:white;
+color:green;
+}
+a,img,input{
+-moz-transition:all .4s;
+text-decoration:none;
+}
+
+input,textarea{
+border:1px solid #ccc;
+padding:5;
+font-family:urw gothic l;
+color:#212;
+}
+
+.search{
+top:10;
+right:1%;
+position:absolute;
+}
+
+.t1{width:25%; height:470; overflow:hidden;text-align:justify;}
+
+.t{width:95%; height:250;overflow:hidden; background:black; z-index:600; align:center;}
+
+.serb{
+width:270;
+border:1px solid #000;
+padding:4;
+color:#1c1c1c;
+}
+.serb:focus{
+width:310;
+border:1px solid #ccc;
+padding:4;
+}
+.button{
+padding:5;
+color:black;
+background:white;
+-moz-transition:.5s;
+
+
+}
+
+.button:hover{
+padding:5;
+color:white;
+background:green;
+-moz-transition:1s;
+
+
+}
+
+.btn1{
+padding:3;
+color:green;
+border:1px solid green;
+-moz-transition:1s;
+}
+.btn1:hover{
+padding:4;
+color:white;
+background:green;
+-moz-transition:.8s;
+}
+
+.img1{width:150%;height:100%; -moz-transition:1s; }
+.img1:hover{margin-left:-50%; height:100%;}
+
+
+#grade{
+width:100%;
+background:white;
+background-image:linear-gradient(to left, #fff,  #eeeeee);
+}
+
+
+
+.gal{
+background:black;
+overflow:hidden;
+z-index:600;
+border:4px solid white;
+box-shadow:2px 2px 2px #1c1c1c;
+animation:gal 3s infinite;
+}
+@keyframes gal{
+0%{-moz-transition:8s; -moz-transform:rotate(-2deg);}
+50%{-moz-transition:6s; -moz-transform:rotate(2deg);}
+100%{-moz-transition:8s; -moz-transform:rotate(-2deg);}
+}
+
+
+
+
+.in{
+border-bottom:1px solid #ccc;
+border-top:1px solid white;
+border-right:1px solid white;
+border-left:1px solid white;
+}
+.in:focus{
+border-bottom:1px solid #1c1c1c;
+border-top:1px solid white;
+border-right:1px solid white;
+border-left:1px solid white;
+}
+.k{border:1px solid white; background-color: transparent;padding:7px 7px; border-radius:7px; color:white;}
+.k:hover {background:#028;}
+
+</style>
+
+<body>
+<div class="bg" style="position:fixed;">
+<img src="img/1.jpg">
+<img src="img/2.jpg">
+<img src="img/9.jpg">
+<img src="img/7.jpg">
+</div>
+<div class="all">
+<nava id="grade">
+<table style="width:84%; height:100%;" align="center">
+<tr>
+<td>
+<font size="6" color="#000" ><b><strong>
+BIOWEB
+</font>
+<br>
+<font size="2" color="green" >
+Anytime....Anywhere
+</font>
+
+<div class="search">
+<input type="text" class="serb" placeholder="Search....">
+<br>
+<font size="2" color="#321" >
+Call Us:028590235
+</font>
+</div>
+</table>
+</nava>
+<nav>
+<table align="center" style="width:74%; ">
+<tr>
+<td>
+<a href="index.html" class="nl">HOME</a>
+<a href="index.html#abt" class="nl">ABOUT US</a>
+<a href="gal.html" class="nl">GALLERY</a>
+<a href="index.html#main" class="nl">OUR SERVICES</a>
+<a href="cont.html" class="nl">CONTACT US</a>
+<div class="dropdown">
+<input type="submit" value=" LOG IN "  class="button" style="position:fixed;right:10; width:22%; border-radius:5px;">
+  <div class="dropdown-content">
+<div style="Width:100%; height:150px;">
+
+<table  align="right" bgcolor="black" style="width:100%; opacity:0.9; border:1px solid grey;" height="300">
+<tr>
+<td>
+<form>
+<center><b>
+<font size="6" face="jara" color="white"style="text-shadow:2px 3px 4px black;">
+LOG<font size="6" face="jara" color="green"> IN
+</b></font></font><p> 
+<input type="text" placeholder="Username.." field size="24" required >
+<br><br>
+<input type="password" placeholder="Password..."field size="24"required>
+<br></center>
+<input type="checkbox" name="remember" id="remember"><font color="white" size="2">Remember me
+<br><br><center>
+<input type="submit" value="submit" class="button">&nbsp;&nbsp;</a>
+<input type="reset" class="button" >
+</form>
+</table>
+</div>
+
+  </div>
+</div>
+</table>
+
+</nav>
+
+
+<div class="wrap">
+<div class="margin">
+<table align="center"  style="width:100%;" height="520">
+<tr>
+<Td>
+<table align="center" style="width:80%;" height="320">
+<tr>
+<Td width="60%" height="320" >
+<video src="video/1.ogg" poster="img/a.png"  controls width="110%" height="320">
+</td>
+<Td width="40%">
+<center>
+<font color="white" size="7" face="cantarell"><b>
+Expose Your App with best way
+</b><br>
+<font size="4">BIOWEB is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+<br><br><a href="#abt">
+<button class="k" >Learn More </button></a>&nbsp;&nbsp;
+<a href="cont.html">
+<button class="k" >Help Desk </button></a>
+</td>
+
+</table>
+</table>
+</div>
+
+
+<section id="main"><br><br><br><br><br><br>
+<table align="center" id="grade" style="width:100%; top:200;" height="600">
+<tr>
+<td><br>
+<font size="5" color="#000" face="jara" style="text-shadow:1px 1px 1px green;">BIOWEB SERVICES</font></b></big>
+<br>
+<hr/ style="color:#ccc"><br>
+<center>
+<table class="t1" align="left"  >
+<tr>
+<td>
+<table class="t" align="center">
+<tr>
+<Td>
+<img src="img/1.jpg" class="img1">
+</table>
+<center><p style="background:white; border:1px solid #ccc; height:120px">
+<font size="3"  face="cantarell" ><b>
+RANIPURAM:
+</b>
+<small>
+Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. 
+</font>
+<p>
+<a href="#abt" class="btn1">Readmore</a>
+</table>
+<table class="t1" align="left">
+<tr>
+<td>
+<table class="t" align="center">
+<tr>
+<Td>
+<img src="img/3.jpg" class="img1">
+</table>
+<center><p style="background:white; border:1px solid #ccc; height:120px">
+<font size="3"  face="cantarell" ><b>
+KODAIKANAL:
+</b>
+<small>
+Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. 
+</font>
+<p>
+<a href="#abt" class="btn1">Readmore</a>
+</table>
+<table class="t1" align="left">
+<tr>
+<td>
+<table class="t" align="center">
+<tr>
+<Td>
+<img src="img/5.jpg" class="img1">
+</table>
+<center><p style="background:white; border:1px solid #ccc; height:120px">
+<font size="3"  face="cantarell" ><b>
+PAITHAL MALA:
+</b>
+<small>
+Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. 
+</font>
+<p>
+<a href="#abt" class="btn1">Readmore</a>
+</table>
+<table height="440" bgcolor="white" align="RIGHT" style="width:22%; border:1px solid #ccc ;box-shadow:2px 1px 2px 1px black;">
+<tr>
+<td>
+
+
+<form>
+<center>
+<font size="6" face="jara" color="black"style="">
+Need<font size="6" face="jara" color="green">Help?
+</b></font></font><p> 
+<input type="text" placeholder="First Name" field size="32" required class="in">
+<br><br>
+<input type="text" placeholder="Last Name" field size="32" required class="in">
+<br><br>
+<input type="email" placeholder="Email" field size="32" required class="in">
+<br><br>
+<input type="text" placeholder="Mobile Number" field size="32" required class="in">
+<br><br>
+ 
+<textarea placeholder="Leave a massage" style="width:85%; height:50px;" class="in">
+</textarea><br><br>
+<input type="submit" value="submit" class="button">&nbsp;&nbsp;
+<input type="reset" class="button" >
+</form>
+</table>
+</div>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<table align="center" background="img/1.jpg"  style="width:100%; " height="490 ">
+<tr>
+<Td>
+<section id="abt">
+<table align="left" bgcolor="black" style="width:65%;  opacity:0.7; height:460;" >
+<tr>
+<Td>
+
+
+<font face="cantarell" color="#fff">
+<big><big>About US</big></big>
+<hr align="left" style="width:95%;border-top: 1px dotted #ccc;">
+ 
+<p align="justify">
+<font size="2">
+Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. 
+Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling.Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. Designing is a matter of concentration.  The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. 
+<font face="cantarell" size="4"> <br><p>Our AIm
+<hr align="left" style="width:95%;border-top: 1px dotted #ccc;">
+
+<font size="2">
+Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling. 
+
+</td>
+</table>
+
+<table align="right" bgcolor="black" style="width:35%;  opacity:1; border-left: 1px solid #ccc; height:230;" >
+<tr>
+<Td><font face="cantarell" color="white" size="4"> Our Team
+<hr align="left" style="width:95%;border-top: 1px solid #ccc;">
+
+<font size="2">
+Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earthDesigning is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside thDesigning is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earthe earth
+
+</table>
+
+
+
+
+
+
+
+
